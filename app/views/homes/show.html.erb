@@ -1,0 +1,15 @@
+<div class="homes-wrapper row">
+  <div class="home">
+    <div class="coverImage" style="background-image: url('<%= @home.image.url %>');" aria-hidden="true"></div>
+    <p class="caption">
+      <%= @home.title %><br>
+      <%= @home.location %><br>
+      <%= @home.about %><br>
+      <%= @home.price %>
+    </p>
+    <div class="text-center">
+      <%= link_to "Cancel", homes_path %>
+      <%= link_to "Edit Home", edit_home_path(@home) %>
+    </div>
+  </div>
+</div>
